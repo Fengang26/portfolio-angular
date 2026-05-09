@@ -189,7 +189,7 @@ export class ProjectService {
       featured: false,
       year: 2026,
       status: 'completed',
-      links: { demo: '#' },
+      links: { demo: 'https://portfolio-elisee.vercel.app' },
       features: [
         'Architecture Feature-Based avec Angular 17+ Standalone Components',
         'Navigation lazy loading avec View Transitions API',
