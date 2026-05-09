@@ -1,16 +1,14 @@
 import { Component, signal } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-import {Button, ButtonModule} from 'primeng/button';
+import { FooterComponent } from './core/layout/footer/footer.component';
+import { HeaderComponent } from './core/layout/header/header.component';
 
 @Component({
   selector: 'app-root',
-  standalone: true,
-  imports: [
-    Button
-  ],
+  imports: [RouterOutlet, FooterComponent, HeaderComponent],
   templateUrl: './app.html',
-  styleUrl: './app.scss'
+  styleUrl: './app.scss',
 })
 export class App {
-  protected readonly title = signal('portfolio-angular');
+  protected readonly title = signal('portfolio');
 }
