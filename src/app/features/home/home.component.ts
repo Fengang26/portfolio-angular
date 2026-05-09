@@ -33,9 +33,9 @@ import { ProjectCardComponent } from '../../shared/components/project-card/proje
 
         <p class="hero-desc">
           Je crée des applications modernes et performantes avec
-          <strong class="accent-text">Angular</strong> pour le web et
+          <strong class="accent-text">Wordpress & Angular</strong> pour le web et
           <strong class="accent-text">Flutter</strong> pour le mobile.
-          Basé à Bafoussam, je transforme vos idées en expériences digitales exceptionnelles.
+          Basé à Douala, je transforme vos idées en expériences digitales exceptionnelles.
         </p>
 
         <div class="hero-ctas">
@@ -43,7 +43,7 @@ import { ProjectCardComponent } from '../../shared/components/project-card/proje
             <span>Voir mes projets</span>
             <i class="pi pi-arrow-right"></i>
           </a>
-          <a href="mailto:sandiey.fengang@gmail.com" class="btn-secondary">
+          <a href="mailto:eliseefengangdev@gmail.com" class="btn-secondary">
             Me contacter
           </a>
         </div>
@@ -55,12 +55,12 @@ import { ProjectCardComponent } from '../../shared/components/project-card/proje
           </div>
           <div class="stat-divider"></div>
           <div class="stat">
-            <span class="stat-num">3+</span>
+            <span class="stat-num">2+</span>
             <span class="stat-label">Années d'expérience</span>
           </div>
           <div class="stat-divider"></div>
           <div class="stat">
-            <span class="stat-num">2</span>
+            <span class="stat-num">3+</span>
             <span class="stat-label">Stacks maîtrisées</span>
           </div>
         </div>
@@ -80,9 +80,10 @@ import { ProjectCardComponent } from '../../shared/components/project-card/proje
 
   <span class="kw">final</span> <span class="typ">List</span>&lt;<span class="typ">String</span>&gt; stack <span class="op">=</span> [
     <span class="str">'Angular'</span>,  <span class="cm">// Web</span>
-    <span class="str">'Flutter'</span>,  <span class="cm">// Mobile</span>
-    <span class="str">'Firebase'</span>,
-    <span class="str">'Supabase'</span>,
+    <span class="str">'Wordpress'</span>,  <span class="cm">// Web</span>
+    <span class="str">'Flutter'</span>,  <span class="cm">// Mobile (Ios & Andoid)</span>
+    <span class="str">'Firebase'</span>, <span class="cm">//Backend</span>
+    <span class="str">'Supabase'</span>,<span class="cm">// Backend</span>
   ];
 
   <span class="kw">bool</span> get available <span class="op">=&gt;</span> <span class="kw">true</span>;
@@ -163,16 +164,14 @@ import { ProjectCardComponent } from '../../shared/components/project-card/proje
           <div class="section-label">À Propos</div>
           <h2 class="section-title">Développeur passionné<br><span class="gold">par l'excellence</span></h2>
           <p>
-            Fondateur de <strong class="gold">dev.codexsoft</strong>, je suis développeur web et mobile basé à Bafoussam, Cameroun.
-            Mon expertise s'étend d'Angular pour les applications web modernes à Flutter pour les expériences mobiles natives.
+            Fondateur de <strong class="gold">Home Finder Software</strong>, je suis développeur web et mobile basé à Douala, Cameroun.
+            Ma passion s'étend d'Angular pour les applications web modernes à Flutter pour les expériences mobiles natives.
           </p>
           <p>
-            Passionné par les architectures propres (Clean Architecture, BLoC, MVVM), je conçois des solutions
+            Passionné par les architectures propres (Clean Architecture, BLoC, Feature Architecture), je conçois des solutions
             maintenables et scalables qui répondent aux véritables besoins des utilisateurs.
           </p>
-          <p>
-            En parallèle, j'enseigne l'informatique au lycée, transmettant ma passion du code à la prochaine génération de développeurs camerounais.
-          </p>
+
 
           <div class="about-highlights">
             @for (item of highlights; track item.label) {
@@ -227,11 +226,11 @@ import { ProjectCardComponent } from '../../shared/components/project-card/proje
           <div class="contact-actions">
             <a href="mailto:sandiey.fengang@gmail.com" class="btn-primary">
               <i class="pi pi-envelope"></i>
-              <span>sandiey.fengang&#64;gmail.com</span>
+              <span>eliseefengangdev&#64;gmail.com</span>
             </a>
             <div class="contact-links">
-              <a href="https://github.com" target="_blank"><i class="pi pi-github"></i> GitHub</a>
-              <a href="https://linkedin.com" target="_blank"><i class="pi pi-linkedin"></i> LinkedIn</a>
+              <a href="https://github.com/Fengang26/" target="_blank"><i class="pi pi-github"></i> GitHub</a>
+              <a href="https://www.linkedin.com/in/elisee-fengang-9148952aa?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank"><i class="pi pi-linkedin"></i> LinkedIn</a>
             </div>
           </div>
         </div>
@@ -837,19 +836,24 @@ export class HomeComponent implements OnInit {
   ];
 
   mainTechs = [
-    { name: 'Angular 17+', role: 'Framework Web Principal', pi: 'pi pi-desktop', color: '#DD0031', level: 88 },
-    { name: 'Flutter & Dart', role: 'Développement Mobile', pi: 'pi pi-mobile', color: '#54C5F8', level: 90 },
-    { name: 'Firebase', role: 'Backend & Temps réel', pi: 'pi pi-database', color: '#FFCA28', level: 82 },
-    { name: 'Supabase', role: 'Backend Open Source', pi: 'pi pi-server', color: '#3ECF8E', level: 75 },
+    { name: 'Angular 17+', role: 'Framework Web Principal', pi: 'pi pi-desktop', color: '#C850C0', level: 50 },
+    { name: 'Flutter & Dart', role: 'Développement Mobile', pi: 'pi pi-mobile', color: '#54C5F8', level: 80 },
+    { name: 'WordPress', role: 'CMS & Sites Web', pi: 'pi pi-globe', color: '#FF7A99', level: 75 },
+    { name: 'Firebase', role: 'Backend & Temps réel', pi: 'pi pi-database', color: '#FFCA28', level: 70 },
+    { name: 'Supabase', role: 'Backend Open Source', pi: 'pi pi-server', color: '#3ECF8E', level: 35 },
     { name: 'TypeScript', role: 'Language Typing', pi: 'pi pi-code', color: '#3178C6', level: 85 },
+    { name: 'Tailwind CSS', role: 'Framework CSS', pi: 'pi pi-palette', color: '#56CFE1', level: 82 },
+    { name: 'Trello', role: 'Gestion de tâches', pi: 'pi pi-table', color: '#0052CC', level: 85 },
+    { name: 'Jira', role: 'Suivi de projets', pi: 'pi pi-ticket', color: '#00C2E0', level: 65 },
+    { name: 'Vue.js', role: 'Framework Web', pi: 'pi pi-code', color: '#42B883', level: 35 },
     { name: 'Git & CI/CD', role: 'Versioning & Déploiement', pi: 'pi pi-share-alt', color: '#F05032', level: 80 },
   ];
 
   highlights = [
-    { icon: 'pi-map-marker', label: 'Bafoussam, Cameroun', color: '#D4AF37' },
-    { icon: 'pi-building', label: 'Fondateur de dev.codexsoft', color: '#54C5F8' },
-    { icon: 'pi-graduation-cap', label: 'Enseignant en Informatique', color: '#4CAF50' },
-    { icon: 'pi-star', label: 'Clean Architecture & BLoC', color: '#FF9800' },
+    { icon: 'pi-map-marker', label: 'Douala, Cameroun', color: '#D4AF37' },
+    { icon: 'pi-building', label: 'Fondateur de Home Finder Software', color: '#54C5F8' },
+    { icon: 'pi-graduation-cap', label: 'Licence en Informatique', color: '#4CAF50' },
+    { icon: 'pi-star', label: 'Clean Architecture & Feature Architecture ', color: '#FF9800' },
     { icon: 'pi-globe', label: 'Applications bilingues FR/EN', color: '#9C27B0' },
   ];
 

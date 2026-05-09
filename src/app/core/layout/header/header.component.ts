@@ -20,9 +20,10 @@ import { CommonModule } from '@angular/common';
         <nav class="nav-links" [class.open]="menuOpen()">
           <a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}" (click)="closeMenu()">Accueil</a>
           <a routerLink="/projects" routerLinkActive="active" (click)="closeMenu()">Projets</a>
-          <a href="#about" (click)="closeMenu()">À propos</a>
-          <a href="#contact" (click)="closeMenu()">Contact</a>
-          <a href="mailto:sandiey.fengang@gmail.com" class="nav-cta" (click)="closeMenu()">
+
+         <a [routerLink]="['/']" fragment="about" (click)="closeMenu()">À propos</a>
+         <a [routerLink]="['/']" fragment="contact">Contact</a>
+          <a href="mailto:eliseefengangdev@gmail.com" class="nav-cta" (click)="closeMenu()">
             <span>Me contacter</span>
           </a>
         </nav>

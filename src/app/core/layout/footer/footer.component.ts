@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { RouterLink } from '@angular/router';
+import {RouterLink,} from '@angular/router';
 
 @Component({
   selector: 'app-footer',
@@ -12,11 +12,11 @@ import { RouterLink } from '@angular/router';
           <div class="brand-logo">
             <span class="lb">&lt;</span>Elisée<span class="dot">.</span><span class="dim">dev</span><span class="lb">/&gt;</span>
           </div>
-          <p>Développeur Web & Mobile passionné, basé à Bafoussam, Cameroun. Je conçois des expériences digitales modernes avec Angular et Flutter.</p>
+          <p>Développeur Web & Mobile passionné, basé à Douala, Cameroun. Je conçois des expériences digitales modernes avec WordPress, Angular et Flutter.</p>
           <div class="socials">
-            <a href="https://github.com" target="_blank" aria-label="GitHub"><i class="pi pi-github"></i></a>
-            <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn"><i class="pi pi-linkedin"></i></a>
-            <a href="mailto:sandiey.fengang@gmail.com" aria-label="Email"><i class="pi pi-envelope"></i></a>
+            <a href="https://github.com/Fengang26/" target="_blank" aria-label="GitHub"><i class="pi pi-github"></i></a>
+            <a href="https://www.linkedin.com/in/elisee-fengang-9148952aa?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" aria-label="LinkedIn"><i class="pi pi-linkedin"></i></a>
+            <a href="mailto:eliseefengangdev@gmail.com" aria-label="Email"><i class="pi pi-envelope"></i></a>
           </div>
         </div>
 
@@ -25,31 +25,32 @@ import { RouterLink } from '@angular/router';
           <ul>
             <li><a routerLink="/">Accueil</a></li>
             <li><a routerLink="/projects">Projets</a></li>
-            <li><a href="#about">À propos</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a [routerLink]="['/']" fragment="about">À propos</a></li>
+            <li><a [routerLink]="['/']" fragment="contact">Contact</a></li>
           </ul>
         </div>
 
         <div class="footer-links">
           <h4>Technologies</h4>
           <ul>
-            <li><a href="#">Angular</a></li>
-            <li><a href="#">Flutter</a></li>
-            <li><a href="#">Firebase</a></li>
-            <li><a href="#">Supabase</a></li>
+            <li><a routerLink="/projects" >Angular</a></li>
+            <li><a routerLink="/projects" >Wordpress</a></li>
+            <li><a routerLink="/projects" >Flutter</a></li>
+            <li><a routerLink="/projects" >Firebase</a></li>
+            <li><a routerLink="/projects" >Supabase</a></li>
           </ul>
         </div>
 
         <div class="footer-contact">
           <h4>Contact</h4>
-          <p><i class="pi pi-map-marker"></i> Bafoussam, Cameroun</p>
-          <p><i class="pi pi-envelope"></i> sandiey.fengang&#64;gmail.com</p>
-          <p><i class="pi pi-building"></i> dev.codexsoft</p>
+          <p><i class="pi pi-map-marker"></i> Douala, Cameroun</p>
+          <p><i class="pi pi-envelope"></i> eliseefengangdev&#64;gmail.com</p>
+          <p><i class="pi pi-building"></i> Ets Home Finder Software</p>
         </div>
       </div>
 
       <div class="footer-bottom">
-        <p>© {{ currentYear }} Élisée Sandiey Fengang — <span class="gold">dev.codexsoft</span>. Tous droits réservés.</p>
+        <p>© {{ currentYear }} Élisée Sandiey Fengang — <span class="gold">Ets Home Finder Software</span>. Tous droits réservés.</p>
         <p>Construit avec <span class="gold">Angular</span> & <span class="gold">PrimeNG</span></p>
       </div>
     </footer>

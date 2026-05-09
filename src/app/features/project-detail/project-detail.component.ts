@@ -108,7 +108,7 @@ import { ProjectService } from '../../core/services/project.service';
                     @if (project()!.links.store) {
                       <a [href]="project()!.links.store" target="_blank" class="sidebar-link store">
                         <i class="pi pi-apple"></i>
-                        <span>App Store</span>
+                        <span>Store</span>
                       </a>
                     }
                   </div>
@@ -130,7 +130,7 @@ import { ProjectService } from '../../core/services/project.service';
 
                 <div class="sidebar-cta">
                   <p>Intéressé par un projet similaire ?</p>
-                  <a href="mailto:sandiey.fengang@gmail.com" class="btn-primary">
+                  <a href="mailto:eliseefengangdev@gmail.com" class="btn-primary">
                     <i class="pi pi-envelope"></i>
                     Me contacter
                   </a>
