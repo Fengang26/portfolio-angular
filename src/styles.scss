@@ -1,3 +1,59 @@
-/* You can add global styles to this file, and also import other style files */
-@import "primeicons/primeicons.css";
-@import 'primeflex/primeflex.scss';
+/* ═══════════════════════════════════════════════
+   PORTFOLIO — ÉLISÉE FENGANG
+   Dark Luxury Theme
+═══════════════════════════════════════════════ */
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;700&display=swap');
+
+:root {
+  --gold: #D4AF37;
+  --gold-dark: #B8860B;
+  --bg-base: #080814;
+  --text-primary: #ffffff;
+  --text-secondary: rgba(255,255,255,0.65);
+  --font-body: 'Outfit', sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: var(--font-body);
+  background: var(--bg-base);
+  color: var(--text-primary);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+}
+
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: var(--bg-base); }
+::-webkit-scrollbar-thumb { background: rgba(212,175,55,0.3); border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: var(--gold); }
+
+::selection { background: rgba(212,175,55,0.25); color: var(--gold); }
+
+h1,h2,h3,h4,h5,h6 { font-family: var(--font-body); font-weight: 800; line-height: 1.15; }
+
+p { line-height: 1.75; }
+a { color: inherit; }
+img { max-width: 100%; display: block; }
+code, pre { font-family: var(--font-mono); }
+
+/* VIEW TRANSITIONS */
+@keyframes fade-in {
+  from { opacity: 0; transform: translateY(16px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+@keyframes fade-out {
+  from { opacity: 1; }
+  to { opacity: 0; transform: translateY(-8px); }
+}
+
+::view-transition-old(root) { animation: 180ms ease fade-out; }
+::view-transition-new(root) { animation: 280ms ease fade-in; }
+
+/* PRIMENG */
+.p-button { border-radius: 0 !important; }
