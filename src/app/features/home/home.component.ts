@@ -224,7 +224,7 @@ import { ProjectCardComponent } from '../../shared/components/project-card/proje
           <h2>Prêt à collaborer ?</h2>
           <p>Que vous ayez un projet web ou mobile, je suis disponible pour en discuter et vous accompagner de l'idée au déploiement.</p>
           <div class="contact-actions">
-            <a href="mailto:sandiey.fengang@gmail.com" class="btn-primary">
+            <a href="mailto:eliseefengangdev@gmail.com" class="btn-primary">
               <i class="pi pi-envelope"></i>
               <span>eliseefengangdev&#64;gmail.com</span>
             </a>
